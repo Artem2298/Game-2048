@@ -1,0 +1,33 @@
+DEFINICE
+definuje rozměry hracího okna a počet sloupců a řádků ve hřě
+
+SDLKO
+hlavní kód 
+
+POHYBY
+obsahuje funkce pro jednotlivé pohyby.
+každá funkce počítá body
+
+POMOCNE
+*vynuluj
+vynuluje pole
+*nahodne 
+generuje na náhodných pozicích 2 nebo 4(s pravděpodobností 1/10)
+*nula
+navrací hodnotu 1, pokud se v poli nachazí číslo 0, v opačném případě vrací hodnotu 0
+*moznytah
+kontroluje, jestli je možné provést tah(pokud se nachazí 2 stejné čísla vedle sebe) po sloupcích a řádcíh. Pokud je pohyb moožný vrací 1.
+*vyhraj 
+kontroluje, jesli je v poli cislo 2048, pokud ano vrací hodnotu 1
+*kreslitext
+pomocná sdl funkce pro vzkreslení textu
+
+CTVERCE
+*ctverce_kresli 
+vykresluje jednotlivé políčka ve hře
+*pozadí
+vykreslí barevný četverec
+
+
+
+
