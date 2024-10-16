@@ -1,33 +1,22 @@
-DEFINICE
-definuje rozměry hracího okna a počet sloupců a řádků ve hřě
+DEFINITION
+Defines the dimensions of the game window and the number of columns and rows in the game.
 
-SDLKO
-hlavní kód 
+MAIN CODE
+Contains the primary code logic for the application.
 
-POHYBY
-obsahuje funkce pro jednotlivé pohyby.
-každá funkce počítá body
+MOVEMENTS
+Includes functions for each movement.
+Each function calculates the score.
 
-POMOCNE
-*vynuluj
-vynuluje pole
-*nahodne 
-generuje na náhodných pozicích 2 nebo 4(s pravděpodobností 1/10)
-*nula
-navrací hodnotu 1, pokud se v poli nachazí číslo 0, v opačném případě vrací hodnotu 0
-*moznytah
-kontroluje, jestli je možné provést tah(pokud se nachazí 2 stejné čísla vedle sebe) po sloupcích a řádcíh. Pokud je pohyb moožný vrací 1.
-*vyhraj 
-kontroluje, jesli je v poli cislo 2048, pokud ano vrací hodnotu 1
-*kreslitext
-pomocná sdl funkce pro vzkreslení textu
+HELPERS
 
-CTVERCE
-*ctverce_kresli 
-vykresluje jednotlivé políčka ve hře
-*pozadí
-vykreslí barevný četverec
+reset: Resets the game grid.
+generate_random: Generates either a 2 or a 4 at random positions (with a 1/10 probability for 4).
+check_zero: Returns 1 if the grid contains a 0 (empty space); otherwise, it returns 0.
+possible_move: Checks whether a move is possible (if two adjacent numbers in rows or columns are the same). If a move is possible, it returns 1.
+check_win: Checks if the number 2048 is present in the grid. If yes, returns 1.
+render_text: A helper SDL function for rendering text.
+SQUARES
 
-
-
-
+draw_squares: Renders individual game squares.
+draw_background: Renders a colored square for the background.
